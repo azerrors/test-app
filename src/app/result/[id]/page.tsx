@@ -4,7 +4,7 @@ import { MainWrapper } from '@/widgets/MainWrapper';
 
 interface ResultsPageProps {
   params: {
-    id: number;
+    id: string;
   };
 }
 
