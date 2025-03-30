@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const NextIcon = ({ color }: any) => (
   <svg
     fill={color}

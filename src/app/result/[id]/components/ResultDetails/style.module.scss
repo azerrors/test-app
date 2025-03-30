@@ -1,13 +1,30 @@
+@import "src/assets/styles/abstracts/index";
+
 .wrapper {
   display: flex;
   gap: 100px;
   padding-top: 30px;
 
+  @include isMobile() {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: unset;
+    gap: 30px;
+  }
+
   .left {
     width: 80%;
+
+    @include isMobile() {
+      width: 100%;
+    }
   }
 
   .right {
     width: 40%;
+
+    @include isMobile() {
+      width: 100%;
+    }
   }
 }

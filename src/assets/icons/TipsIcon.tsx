@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const TipsIcon = ({ color }: any) => (
   <svg
     fill={color}

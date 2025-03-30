@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const HomeIcon = ({ color }: any) => (
   <svg
     fill={color}

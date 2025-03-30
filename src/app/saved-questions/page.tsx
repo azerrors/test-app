@@ -19,7 +19,7 @@ export default function SavedQuestionsPage() {
 
   return (
     <MainWrapper>
-      <Header>Yadda Saxlanilan Suallar</Header>
+      <Header>Yadda Saxlanılan Suallar</Header>
       <div className={s.wrapper}>
         <div className={s.savedQuestionWrapper}>
           {savedQuestions?.map((question, index) => (

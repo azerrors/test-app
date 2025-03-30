@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { QuestionProp } from '@/types/types';
 
 import s from './style.module.scss';

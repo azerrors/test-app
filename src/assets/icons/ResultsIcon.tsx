@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const ResultsIcon = ({ color }: any) => (
   <svg
     fill={color}

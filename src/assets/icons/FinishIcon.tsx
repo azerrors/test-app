@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const FinishIcon = ({ color }: any) => (
   <svg
     fill={color}

@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const BookmarkIcon = ({ color }: any) => (
   <svg
     height="40px"
