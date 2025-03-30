@@ -8,7 +8,7 @@ interface ResultsPageProps {
   };
 }
 
-export default async function ResultsPage({ params }: ResultsPageProps) {
+export default function ResultsPage({ params }: ResultsPageProps) {
   const id = Number(params.id);
 
   return (
