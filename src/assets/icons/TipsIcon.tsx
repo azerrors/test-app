@@ -1,6 +1,7 @@
 import React from 'react';
+import { IconProps } from '@/assets/icons/HomeIcon';
 
-export const TipsIcon = ({ color }: never) => (
+export const TipsIcon = ({ color }: IconProps) => (
   <svg
     fill={color}
     version="1.1"

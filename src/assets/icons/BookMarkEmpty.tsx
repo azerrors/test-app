@@ -1,6 +1,7 @@
 import React from 'react';
+import { IconProps } from '@/assets/icons/HomeIcon';
 
-export const BookMarkEmptyIcon = ({ color }: never) => (
+export const BookMarkEmptyIcon = ({ color }: IconProps) => (
   <svg
     fill={color}
     height="40px"

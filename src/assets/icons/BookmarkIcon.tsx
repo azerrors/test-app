@@ -1,6 +1,7 @@
 import React from 'react';
+import { IconProps } from '@/assets/icons/HomeIcon';
 
-export const BookmarkIcon = ({ color }: never) => (
+export const BookmarkIcon = ({ color }: IconProps) => (
   <svg
     height="40px"
     width="40px"

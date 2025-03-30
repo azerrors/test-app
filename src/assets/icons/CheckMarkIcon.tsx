@@ -1,6 +1,7 @@
 import React from 'react';
+import { IconProps } from '@/assets/icons/HomeIcon';
 
-export const CheckMarkIcon = ({ color }: never) => (
+export const CheckMarkIcon = ({ color }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     x="0px"

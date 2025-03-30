@@ -1,6 +1,10 @@
 import React from 'react';
 
-export const HomeIcon = ({ color }: never) => (
+export interface IconProps {
+  color: string;
+}
+
+export const HomeIcon = ({ color }: IconProps) => (
   <svg
     fill={color}
     version="1.1"

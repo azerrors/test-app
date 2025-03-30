@@ -28,14 +28,6 @@ export const TestWrapper = ({ question }: TestWrapperProp) => {
     (q) => q.question === question.question
   )?.answer;
 
-  const alphabet = [
-    { word: 'A' },
-    { word: 'B' },
-    { word: 'C' },
-    { word: 'D' },
-    { word: 'E' },
-  ];
-
   useEffect(() => {
     const data = localStorage.getItem('saved');
     const savedQuestions = data ? JSON.parse(data) : [];
