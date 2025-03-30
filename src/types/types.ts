@@ -13,7 +13,7 @@ export interface QuestionProp {
   question: string;
   options: string[];
   correctAnswer: string;
-  number?: string;
+  number?: number;
 }
 
 export interface AnsweredQuestionProps {
