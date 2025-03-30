@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const PrevIcon = ({ color }: any) => (
+export const PrevIcon = ({ color }: never) => (
   <svg
     fill={color}
     version="1.1"

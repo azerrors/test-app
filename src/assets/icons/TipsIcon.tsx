@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const TipsIcon = ({ color }: any) => (
+export const TipsIcon = ({ color }: never) => (
   <svg
     fill={color}
     version="1.1"

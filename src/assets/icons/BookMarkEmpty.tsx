@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const BookMarkEmptyIcon = ({ color }: any) => (
+export const BookMarkEmptyIcon = ({ color }: never) => (
   <svg
     fill={color}
     height="40px"

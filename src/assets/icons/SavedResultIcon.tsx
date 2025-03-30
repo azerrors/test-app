@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const SavedResultIcon = ({ color }: any) => (
+export const SavedResultIcon = ({ color }: never) => (
   <svg
     fill={color}
     version="1.1"

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const BookmarkIcon = ({ color }: any) => (
+export const BookmarkIcon = ({ color }: never) => (
   <svg
     height="40px"
     width="40px"

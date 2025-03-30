@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const HomeIcon = ({ color }: any) => (
+export const HomeIcon = ({ color }: never) => (
   <svg
     fill={color}
     version="1.1"
