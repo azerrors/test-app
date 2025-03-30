@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  gap: 100px;
+  padding-top: 30px;
+
+  .savedQuestionWrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.asa{
+  width: 40%;
+}

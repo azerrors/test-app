@@ -1,0 +1,82 @@
+@import "src/assets/styles/abstracts/index";
+
+.wrapper {
+
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7AB2B2;
+    border: 1px solid #4D869C;
+    border-radius: 5px;
+
+    @include isMobile() {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      min-height: 195px;
+    }
+  }
+
+
+  .savedIcons {
+    cursor: pointer;
+
+    @include isMobile() {
+      position: absolute;
+      top: 0;
+      right: -1px;
+    }
+  }
+
+  h2 {
+    width: 100%;
+    padding: 40px;
+    font-size: 1.4rem;
+    color: #EEF7FF;
+
+    @include isMobile() {
+      padding: 40px;
+      font-size: 1.2rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+
+    @include isMobile() {
+      gap: 10px;
+      padding-top: 20px;
+    }
+
+
+    .default {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      cursor: pointer;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      padding: 20px;
+      border: 2px solid #cfcdd9;
+
+      @include isMobile() {
+        padding: 10px;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.correct {
+  border: 2px solid #3a705d !important;
+  background-color: #e2f0eb;
+}
+
+.selected {
+  border: 2px solid #7AB2B2 !important;
+}

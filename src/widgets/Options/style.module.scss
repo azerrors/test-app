@@ -1,3 +1,6 @@
+@import "src/assets/styles/abstracts/index";
+
+
 .options {
   padding-left: 20px;
   padding-right: 20px;
@@ -5,6 +8,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include isMobile() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
 
   span {
     border: 1px solid #7FC7D9;
@@ -14,20 +24,38 @@
     font-size: 1.2rem;
     letter-spacing: 2px;
     font-weight: bold;
+
+    @include isMobile() {
+      display: none;
+    }
   }
 
   .buttons {
     display: flex;
     gap: 20px;
 
+
+    @include isMobile() {
+      gap: 10px;
+    }
   }
 
   .primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
     color: #4D869C;
     font-size: 1.2rem;
     border: 1px solid #7AB2B2;
     padding: 10px 20px;
     border-radius: 10px;
+
+    @include isMobile() {
+      padding: 20px 25px;
+      font-size: 0.8rem;
+    }
 
     &:hover {
       color: #EEF7FF;
@@ -38,11 +66,22 @@
   }
 
   .secondary {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #EEF7FF;
     background-color: #4D869C;
     font-size: 1.2rem;
     padding: 10px 20px;
     border-radius: 10px;
+
+
+    @include isMobile() {
+      padding: 20px 25px;
+      font-size: 0.8rem;
+    }
 
   }
 }

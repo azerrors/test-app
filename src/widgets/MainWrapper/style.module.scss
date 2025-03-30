@@ -1,0 +1,12 @@
+@import "src/assets/styles/abstracts/index";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 150px;
+
+  @include isMobile() {
+    padding: 0px 10px;
+  }
+}
+

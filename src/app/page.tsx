@@ -1,12 +1,12 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { MainWrapper } from '@/app/widgets/MainWrapper';
-import { TestWrapper } from '@/app/widgets/TestWrapper';
-import { Options } from '@/app/widgets/Options';
 import { useQuizStore } from '@/store/quizStore';
 import { getRandomQuestions } from '@/helpers/getRandomQuestions';
-import { questions } from '@/app/data/data';
+import { questions } from '@/data/data';
+import { MainWrapper } from '@/widgets/MainWrapper';
+import { TestWrapper } from '@/widgets/TestWrapper';
+import { Options } from '@/widgets/Options';
 
 export default function Page() {
   const questionNumber = useQuizStore((store) => store.questionNumber);

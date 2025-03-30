@@ -1,0 +1,27 @@
+@import "src/assets/styles/abstracts/index";
+
+.wrapper {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 50px;
+  padding: 90px 150px 15px 150px;
+
+  @include isMobile(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: unset;
+    gap: 20px;
+    font-size: 1rem;
+  }
+
+  .link{
+    border-radius: 5px;
+    padding: 10px;
+
+    &:hover{
+      transition: all .7s ease;
+      border-bottom: 1px solid #292929 ;
+    }
+  }
+}

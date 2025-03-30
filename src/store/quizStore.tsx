@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { QuestionProp } from '@/app/widgets/TestWrapper';
+import { QuestionProp } from '@/types/types';
 
 interface QuizStore {
   selectedAnswers: { question: string; answer: string }[];

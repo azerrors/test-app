@@ -1,0 +1,78 @@
+@import "src/assets/styles/abstracts/index";
+
+
+.results {
+  position: relative;
+  min-width: 31%;
+  max-width: 40%;
+  padding: 25px;
+  border: 1px solid #EEF7FF;
+  background-color: #def0f0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+
+  @include isMobile() {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  .number {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 10px;
+    border-radius: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #7FC7D9;
+    color: #EEF7FF;
+    left: 2px;
+    top: 0px;
+  }
+
+  .answeredQuestions {
+    font-size: 22px;
+  }
+
+  .correct {
+    font-size: 20px;
+  }
+
+  .wrong {
+    font-size: 18px;
+  }
+
+}
+
+
+.buttonWrapper {
+  display: flex;
+  gap: 20px;
+
+  button {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+  .more {
+    background-color: #4D869C;
+    color: #EEF7FF;
+    border: 1px solid #EEF7FF;
+  }
+
+  .delete {
+    background-color: red;
+    color: #EEF7FF;
+    border: 1px solid #EEF7FF;
+  }
+}
