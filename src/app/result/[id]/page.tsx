@@ -3,9 +3,7 @@ import { ResultDetails } from '@/app/result/[id]/components/ResultDetails';
 import { MainWrapper } from '@/widgets/MainWrapper';
 
 interface ResultsPageProps {
-  params: {
-    id: string;
-  };
+  params: Record<string, string>;
 }
 
 export default function ResultsPage({ params }: ResultsPageProps) {
