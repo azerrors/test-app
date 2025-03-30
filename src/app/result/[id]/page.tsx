@@ -9,9 +9,11 @@ interface ResultsPageProps {
 }
 
 export default async function ResultsPage({ params }: ResultsPageProps) {
+  const id = Number(params.id);
+
   return (
     <MainWrapper>
-      <ResultDetails id={params.id} />
+      <ResultDetails id={id} />
     </MainWrapper>
   );
 }
