@@ -3,15 +3,15 @@ import { ResultDetails } from '@/app/result/[id]/components/ResultDetails';
 import { MainWrapper } from '@/widgets/MainWrapper';
 
 interface ResultsPageProps {
-  params: Record<string, string>;
+  params: {
+    id: number;
+  };
 }
 
-export default function ResultsPage({ params }: ResultsPageProps) {
-  const id = Number(params.id);
-
+export default async function ResultsPage({ params }: ResultsPageProps) {
   return (
     <MainWrapper>
-      <ResultDetails id={id} />
+      <ResultDetails id={params.id} />
     </MainWrapper>
   );
 }
