@@ -10,6 +10,11 @@ export default function ToxuculuqPage() {
     <MainWrapper>
       <div className={s.wrapper}>
         {questions.map((question) => {
+          const isDone = question.options.map(
+            (op) => op === question.correctAnswer
+          );
+          console.log();
+
           return (
             <div key={question.number}>
               <div className={s.questionName}>
@@ -27,7 +32,7 @@ export default function ToxuculuqPage() {
                     >
                       <span className={s.plus}>{isCorrect && '+'}</span>
 
-                      <li>{option}</li>
+                      <li className={clsx(isCorrect && s.d)}>{option}</li>
                     </div>
                   );
                 })}
