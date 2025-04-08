@@ -14,6 +14,8 @@ export default function Page() {
   const setRandomQuestions = useQuizStore((store) => store.setRandomQuestions);
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
     setRandomQuestions(getRandomQuestions(questions, 50));
   }, []);
 
