@@ -3,7 +3,1976 @@
 import { QuestionProp } from '@/types/types';
 
 export const getRandomQuestions = (
-  questions: QuestionProp[],
+  questions: (
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: number[];
+        correctAnswer: number;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: number[];
+        correctAnswer: number;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: (string | number)[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: number[];
+        correctAnswer: number;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: number[];
+        correctAnswer: number;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: number[];
+        correctAnswer: number;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: number[];
+        correctAnswer: number;
+      }
+    | {
+        number: number;
+        question: string;
+        options: number[];
+        correctAnswer: number;
+      }
+    | {
+        number: number;
+        question: string;
+        options: number[];
+        correctAnswer: number;
+      }
+    | {
+        number: number;
+        question: string;
+        options: number[];
+        correctAnswer: number;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: number[];
+        correctAnswer: number;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: number[];
+        correctAnswer: number;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+    | {
+        number: number;
+        question: string;
+        options: string[];
+        correctAnswer: string;
+      }
+  )[],
   count: number
 ) => {
   const shuffled = [...questions].sort(() => 0.5 - Math.random());

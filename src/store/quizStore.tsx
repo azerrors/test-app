@@ -9,7 +9,28 @@ interface QuizStore {
   setQuestionNumber: (questionNumber: number) => void;
   setSelectedAnswer: (question: string, answer: string) => void;
   setShowCorrectVariant: (value: boolean) => void;
-  setRandomQuestions: (questions: QuestionProp[]) => void;
+  setRandomQuestions: (
+    questions: (
+      | {
+          number: number;
+          question: string;
+          options: string[];
+          correctAnswer: string;
+        }
+      | {
+          number: number;
+          question: string;
+          options: number[];
+          correctAnswer: number;
+        }
+      | {
+          number: number;
+          question: string;
+          options: (string | number)[];
+          correctAnswer: string;
+        }
+    )[]
+  ) => void;
 }
 
 export const useQuizStore = create<QuizStore>((set) => ({
