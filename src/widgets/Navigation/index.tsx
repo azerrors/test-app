@@ -18,9 +18,6 @@ export const Navigation = () => {
       <Link href="/saved-questions" className={s.link}>
         <SavedResultIcon color="#292929" />
       </Link>
-      <Link href="/toxuculuq" className={s.link}>
-        +
-      </Link>
     </div>
   );
 };

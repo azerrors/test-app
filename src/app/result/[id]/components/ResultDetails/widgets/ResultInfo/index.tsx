@@ -2,7 +2,7 @@ import React from 'react';
 
 import s from './style.module.scss';
 import Link from 'next/link';
-import useCorrectAnswersCount from '@/helpers/getAllAnswersCount';
+import useCorrectAnswersCount from '@/hooks/getAllAnswersCount';
 import { ResultsProps } from '@/types/types';
 import clsx from 'clsx';
 
@@ -46,9 +46,9 @@ export const ResultInfo = ({
   return (
     <div className={s.wrapper}>
       <div className={s.additionalInfo}>
-        <span>Cavablanilan sual: {answeredQuestions?.length}</span>
-        <span>Dogru cavablar: {correctAnswersCount}</span>
-        <span>Yanlis cavablar: {wrongAnswersCount}</span>
+        <span>Cavablanılan Suallar: {answeredQuestions?.length}</span>
+        <span>Doğru Cavablar: {correctAnswersCount}</span>
+        <span>Yanlış Cavablar: {wrongAnswersCount}</span>
       </div>
 
       <div className={s.filters}>
@@ -60,7 +60,7 @@ export const ResultInfo = ({
           )}
           onClick={handleShowCorrectAnswers}
         >
-          Doğru Cavabları Göster
+          Doğru Cavabları Göstər
         </button>
         <button
           type="button"
@@ -70,7 +70,7 @@ export const ResultInfo = ({
           )}
           onClick={handleShowWrongAnswers}
         >
-          Yanlış Cavabları Göster
+          Yanlış Cavabları Göstər
         </button>
 
         <button
@@ -78,17 +78,17 @@ export const ResultInfo = ({
           className={s.f_all}
           onClick={handleShowAllAnswers}
         >
-          Butun Cavablari Goster
+          Bütün Cavabları Göstər
         </button>
       </div>
 
       <div className={s.links}>
         <Link href="/" className={s.home}>
-          <button type="button">/ Sinaq Et</button>
+          <button type="button">/ Sınaq Et</button>
         </Link>
 
         <Link href="/totalResults" className={s.other}>
-          <button type="button">/ Diger Neticeler</button>
+          <button type="button">/ Digər Nəticələr</button>
         </Link>
       </div>
     </div>

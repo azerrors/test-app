@@ -19,12 +19,34 @@
     flex-direction: column;
     gap: 30px;
 
+    &.widthFull{
+      width: 100%;
+    }
     @include isMobile() {
       width: 100%;
     }
+
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+
+      @include isMobile() {
+        padding-top: unset;
+      }
+    }
+
+    .notFoundText {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+
   }
 }
-.asa{
+
+.asa {
   width: 40%;
 
   @include isMobile() {

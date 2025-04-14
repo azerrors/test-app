@@ -21,14 +21,32 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    height: 25vh;
+    min-height: 35vh;
     padding-top: 10px;
     width: 100%;
     border: 1px solid #eee;
     border-radius: 15px;
 
+    @include isMobile(){
+      height: 20rem;
+    }
+
     h3 {
       font-size: 1.2rem;
+    }
+
+
+    .btn{
+      transition: all 0.4s ease;
+      background-color: #7AB2B2;
+      padding: 10px 15px;
+      color:#EEF7FF;
+      border-radius: 10px;
+
+      &:hover{
+        transform: scale(1.1);
+        background-color: #8dc9c9;
+      }
     }
 
     span {
@@ -43,6 +61,7 @@
       border-radius: 100%;
       padding: 50px;
       background-color: #7AB2B2;
+      margin: 13px 0px;
     }
   }
 
