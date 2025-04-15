@@ -54,9 +54,6 @@ export const Options = () => {
 
   return (
     <div className={s.options}>
-      <span>
-        {questionNumber + 1}/{randomQuestions.length}
-      </span>
       <div className={s.buttons}>
         {showCorrectVariant ? (
           <button

@@ -6,7 +6,7 @@
   padding-right: 20px;
   padding-top: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 
   @include isMobile() {
@@ -57,12 +57,12 @@
       font-size: 0.8rem;
     }
 
-    &:hover {
-      color: #EEF7FF;
-      border: 1px solid #EEF7FF;
-      background-color: #4D869C;
-      transition: all .4s linear;
-    }
+    //&:hover {
+    //  color: #EEF7FF;
+    //  border: 1px solid #EEF7FF;
+    //  background-color: #4D869C;
+    //  transition: all .4s linear;
+    //}
   }
 
   .secondary {

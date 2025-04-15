@@ -1,0 +1,29 @@
+@import "src/assets/styles/abstracts/index";
+
+.wrapper {
+  display: flex ;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include isMobile(){
+    padding: 10px 0;
+  }
+
+  span{
+    font-size: 18px;
+  }
+}
+.loader {
+  width: 100%;
+  height: 20px !important;
+  border-radius: 50px;
+
+  :global(.MuiLinearProgress-bar) {
+    background-color: #4D869C; // neon green
+    border-radius: 50px;
+  }
+}
+

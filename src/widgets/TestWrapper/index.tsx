@@ -7,6 +7,7 @@ import { CheckMarkIcon } from '@/assets/icons/CheckMarkIcon';
 import { BookMarkEmptyIcon } from '@/assets/icons/BookMarkEmpty';
 import { QuestionProp } from '@/types/types';
 import { BookmarkIcon } from '@/assets/icons/BookmarkIcon';
+import { ProgressBar } from '@/components/ProgressBar';
 
 interface TestWrapperProp {
   question: {
@@ -63,6 +64,7 @@ export const TestWrapper = ({ question }: TestWrapperProp) => {
     localStorage.setItem('saved', JSON.stringify(updatedData));
     setIsSaved(false);
   };
+
   return (
     <div className={s.wrapper}>
       <div className={s.header}>
@@ -79,6 +81,8 @@ export const TestWrapper = ({ question }: TestWrapperProp) => {
           )}
         </div>
       </div>
+
+      <ProgressBar />
       <ul className={s.answers}>
         {question.options.map((answer) => {
           const isCorrect =
