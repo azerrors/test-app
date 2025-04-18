@@ -27,7 +27,7 @@
     border: 1px solid #eee;
     border-radius: 15px;
 
-    @include isMobile(){
+    @include isMobile() {
       height: 20rem;
     }
 
@@ -35,17 +35,34 @@
       font-size: 1.2rem;
     }
 
+    .btnWrapper {
+      display: flex;
+      gap: 15px;
+    }
 
-    .btn{
+    .btn1 {
       transition: all 0.4s ease;
       background-color: #7AB2B2;
       padding: 10px 15px;
-      color:#EEF7FF;
+      color: #EEF7FF;
       border-radius: 10px;
 
-      &:hover{
+      &:hover {
         transform: scale(1.1);
         background-color: #8dc9c9;
+      }
+    }
+
+    .btn2 {
+      transition: all 0.4s ease;
+      background-color: #3a705d;
+      padding: 10px 15px;
+      color: #EEF7FF;
+      border-radius: 10px;
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: #5db291;
       }
     }
 

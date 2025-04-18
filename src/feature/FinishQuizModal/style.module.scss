@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 40px;
+  }
+
+  .buttonsWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    button {
+      flex: 1;
+      color: #EEF7FF;
+      border-radius: 10px;
+      padding: 10px 15px;
+    }
+
+    .yes {
+      background-color: #3a705d;
+    }
+
+    .no {
+      background-color: #f44336;
+    }
+  }
+}

@@ -26,7 +26,7 @@ export const TestWrapper = ({ question }: TestWrapperProp) => {
   const setSelectedAnswer = useQuizStore((store) => store.setSelectedAnswer);
 
   const selectedAnswer = selectedAnswers.find(
-    (q) => q.question === question.question
+    (q) => q.question === question?.question
   )?.answer;
 
   useEffect(() => {
@@ -34,9 +34,11 @@ export const TestWrapper = ({ question }: TestWrapperProp) => {
     const savedQuestions = data ? JSON.parse(data) : [];
     setSavedQuestions(savedQuestions);
     setIsSaved(
-      savedQuestions.some((q: QuestionProp) => q.question === question.question)
+      savedQuestions.some(
+        (q: QuestionProp) => q.question === question?.question
+      )
     );
-  }, [question.question]);
+  }, [question?.question]);
 
   const handleAddToSaved = () => {
     const data = localStorage.getItem('saved');
@@ -68,7 +70,7 @@ export const TestWrapper = ({ question }: TestWrapperProp) => {
   return (
     <div className={s.wrapper}>
       <div className={s.header}>
-        <h2>{question.question}</h2>
+        <h2>{question?.question}</h2>
         <div className={s.savedIcons}>
           {isSaved ? (
             <span onClick={handleDeleteFromSaved}>
@@ -84,7 +86,7 @@ export const TestWrapper = ({ question }: TestWrapperProp) => {
 
       <ProgressBar />
       <ul className={s.answers}>
-        {question.options.map((answer) => {
+        {question?.options.map((answer) => {
           const isCorrect =
             answer === question.correctAnswer && question.options;
           const isSelected = answer === selectedAnswer;

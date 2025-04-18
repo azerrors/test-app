@@ -28,9 +28,14 @@ export const SavedQuestionsInfo = ({
       <div className={s.totalSavedQuestions}>
         <h3>Toplam Suallar</h3>
         <span>{savedQuestions?.length}</span>
-        <button className={s.btn} onClick={handleClick}>
-          Saxlanılan Suallar Sil
-        </button>
+        <div className={s.btnWrapper}>
+          <button className={s.btn1} onClick={handleClick}>
+            Saxlanılan Suallar Sil
+          </button>
+          <Link className={s.btn2} href="/saved-questions/quiz">
+            Yaddaşını Yoxla
+          </Link>
+        </div>
       </div>
 
       <div className={s.questionListWrapper}>
