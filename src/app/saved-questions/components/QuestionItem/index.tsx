@@ -12,6 +12,7 @@ interface QuestionItemProp {
 }
 
 export const QuestionItem = ({ questions, number }: QuestionItemProp) => {
+  // const [showCorrectVariant, setShowCorrectVariant] = useState<boolean>(false);
   const [isSaved, setIsSaved] = useState<boolean>(false);
   const [savedQuestions, setSavedQuestions] = useState<QuestionProp[]>();
 
@@ -82,11 +83,11 @@ export const QuestionItem = ({ questions, number }: QuestionItemProp) => {
               })}
             >
               <button>{answer}</button>
-              {isCorrect && isCorrect && (
-                <span className={s.icon}>
-                  <CheckMarkIcon color="#2c8c72" />
-                </span>
-              )}
+              {/*{isCorrect && isCorrect && (*/}
+              {/*  <span className={s.icon}>*/}
+              {/*    <CheckMarkIcon color="#2c8c72" />*/}
+              {/*  </span>*/}
+              {/*)}*/}
             </div>
           );
         })}
