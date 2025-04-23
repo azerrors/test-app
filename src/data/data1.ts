@@ -148,11 +148,11 @@ export const questions2 = [
   {
     number: 13,
     question:
-      'Aşağıdakılardan hansı, material ehtiyatlarının çatdırılması vaxtı ola bilər? təsbit edilməmiş və təsadüfi olmayan müddətdə',
+      'Aşağıdakılardan hansı, material ehtiyatlarının çatdırılması vaxtı ola bilər?',
     options: [
       'təsbit edilmiş və ya təsadüfi müddətdə',
       'yalnız təsadüfi müddətdə',
-      '',
+      'təsbit edilməmiş və təsadüfi olmayan müddətdə',
       'yalnız təsbit edilmişmüddətdə',
       'təsadüfi olmayan müddətdə',
     ],
@@ -344,15 +344,16 @@ export const questions2 = [
   {
     number: 28,
     question:
-      'Material ehtiyatlarının saxlanmasına çəkilən xərcləri hansı üsula azalmaq mümkündür? daimi xərclərin material ehtiyatlarının saxlanmasına çəkilən xərclərlə optimal əlaqəsinin saxlanması üsulu ilə',
+      'Material ehtiyatlarının saxlanmasına çəkilən xərcləri hansı üsula azalmaq mümkündür?',
     options: [
       'istehsal prosesi mərhələlərinin azaldılması üsulu ilə',
       'istehsal xərclərin artırılması üsulu ilə',
       'texnoloji proseslərin mərhələlərinin azaldılması üsulu ilə',
       'hər ehtiyata çəkilən vaxt itkisinin azaldılması üsulu ilə',
-      '',
+      'daimi xərclərin material ehtiyatlarının saxlanmasına çəkilən xərclərlə optimal əlaqəsinin saxlanması üsulu ilə',
     ],
-    correctAnswer: '',
+    correctAnswer:
+      'daimi xərclərin material ehtiyatlarının saxlanmasına çəkilən xərclərlə optimal əlaqəsinin saxlanması üsulu ilə',
   },
   {
     number: 29,
@@ -1517,14 +1518,13 @@ export const questions2 = [
   },
   {
     number: 124,
-    question:
-      '«Dəqiq vaxtında» konsepsiyası nəyə imkan verir? xidmətin səviyyəsini yüksəltməyə',
+    question: '«Dəqiq vaxtında» konsepsiyası nəyə imkan verir?',
     options: [
       'ehtiyatların səviyyəsini minimuma endirməyə',
       'menecmentinüsulunu dəyişməyə',
       'malları daşımasının optimallığına',
       'hazır məhsulun keyfiyyətini artırmağa',
-      '',
+      'xidmətin səviyyəsini yüksəltməyə',
     ],
     correctAnswer: 'ehtiyatların səviyyəsini minimuma endirməyə',
   },
@@ -1570,9 +1570,9 @@ export const questions2 = [
   {
     number: 128,
     question:
-      'Bu, dəyişən material ehtiyatların idarə edilməsində əsas məsələ hesab olunur?Bu nədir? resursların göndərilmə tezliyi',
+      'Bu, dəyişən material ehtiyatların idarə edilməsində əsas məsələ hesab olunur?Bu nədir?',
     options: [
-      '',
+      'resursların göndərilmə tezliyi',
       'resursların daxil olma tezliyi',
       'daxil olan resursların həcmi',
       'məhsulun hazırlıq səviyyəsi',
@@ -1746,11 +1746,11 @@ export const questions2 = [
   {
     number: 142,
     question:
-      'Material ehtiyatların idarə edilməsi sistemi hansı tədbirlərin kompleksidir? istehsalın planlaşdırılması və fasiləsiz nəzarət',
+      'Material ehtiyatların idarə edilməsi sistemi hansı tədbirlərin kompleksidir?',
     options: [
       'təchizatın planlaşdırılması, nəzarət, ehtiyatların yaradılması',
       'fasiləsiz nəzarət',
-      '',
+      'istehsalın planlaşdırılması və fasiləsiz nəzarət',
       'ehtiyatın yaradılması və artırılması, daimi nəzarətin təşkili və mal göndəril-məsinin operativ planlaşdırılması',
       'təchizatın planlaşdırılması və nəzarətin fasiləsiz təşkil',
     ],
@@ -2019,9 +2019,9 @@ export const questions2 = [
   {
     number: 164,
     question:
-      'Hazır məhsul material ehtiyatlarının növlərindən biri ola bilərmi ? xammalın emal edilməyən növləri ola bilər',
+      'Hazır məhsul material ehtiyatlarının növlərindən biri ola bilərmi ?',
     options: [
-      '',
+      'xammalın emal edilməyən növləri ola bilər',
       'ola bilər',
       'xammalın bəzi növləri ola bilər',
       'material ehtiyatlarının növləri ola bilməz',
@@ -2031,16 +2031,15 @@ export const questions2 = [
   },
   {
     number: 165,
-    question:
-      'Xammal, material ehtiyatlarının növlərindən biri ola bilərmi ? xammalın emal edilməyən növləridir material ehtiyatları xammalın növləridir',
+    question: 'Xammal, material ehtiyatlarının növlərindən biri ola bilərmi ?',
     options: [
       'material ehtiyatları xammalın xüsusinövləridir',
-      '',
+      'xammalın emal edilməyən növləridir',
       'material ehtiyatlarının növləri ola bilməz',
       'material ehtiyatları xammalın bəzi növləridir',
-      '',
+      'material ehtiyatları xammalın növləridir',
     ],
-    correctAnswer: '',
+    correctAnswer: 'material ehtiyatları xammalın növləridir',
   },
   {
     number: 166,
@@ -2050,11 +2049,10 @@ export const questions2 = [
   },
   {
     number: 167,
-    question:
-      'Xüsusi xidmət funksiyaları hansı göstəricilər üzrə mövcuddur ? sənədlərin kütləvi olaraq fərqli olması materialların kartotekalarda yerləşdirilməsi',
+    question: 'Xüsusi xidmət funksiyaları hansı göstəricilər üzrə mövcuddur ?',
     options: [
-      '',
-      '',
+      'sənədlərin kütləvi olaraq fərqli olması',
+      'materialların kartotekalarda yerləşdirilməsi',
       'aylıq hesabatların ayrı-ayrı bölmələri üzrə',
       'müxtəlif bölmələr üzrə',
       'aylıq hesabatların bağlanması',
@@ -2076,12 +2074,11 @@ export const questions2 = [
   },
   {
     number: 169,
-    question:
-      'Hansı əməliyyatda bir neçə xüsusi imkanlar mövcuddur ? materialların zavoddaxili yerləşdirilməsinin təsdiqi rejimi maddi dəyərlilərin yüklənməsi və göndərilməsi',
+    question: 'Hansı əməliyyatda bir neçə xüsusi imkanlar mövcuddur ?',
     options: [
       'ehtiyat qaydada saxlanmasında',
-      '',
-      '',
+      'materialların zavoddaxili yerləşdirilməsinin təsdiqi rejimi',
+      'maddi dəyərlilərin yüklənməsi və göndərilməsi',
       'qəbul olunan sənədlərin real və «ehtiyat» qaydada saxlanmasında',
       'bir neçə ölçü vahidinə uyğun olaraq materialların hərəkətivə saxlanmasının uçotunda',
     ],
@@ -2091,11 +2088,11 @@ export const questions2 = [
   {
     number: 170,
     question:
-      'Mal ehtiyatlarının hərəkəti və qalığının hesabatının aparılmasının formalaşması nəyin tərkib hissəsidir? istehlak amillərinin uçotunun',
+      'Mal ehtiyatlarının hərəkəti və qalığının hesabatının aparılmasının formalaşması nəyin tərkib hissəsidir?',
     options: [
       'yalnız vasitəçilər tərəfindən aparılan uçotun',
       'istehsal amillərininuçotunun',
-      '',
+      'istehlak amillərinin uçotunun',
       'maddi dəyərlilərin hərəkəti və ehtiyatların uçotunun',
       'istehlakçılar tərəfindənaparılan uçotun',
     ],
@@ -2104,9 +2101,9 @@ export const questions2 = [
   {
     number: 171,
     question:
-      'Mal ehtiyatlarının saxlanmasının müxtəlif forması nəyin tərkib hissəsidir? istehlak amillərinin uçotunun',
+      'Mal ehtiyatlarının saxlanmasının müxtəlif forması nəyin tərkib hissəsidir?',
     options: [
-      '',
+      'istehlak amillərinin uçotunun',
       'maddi dəyərlilərin hərəkəti və ehtiyatların uçotunun',
       'yalnız vasitəçilər tərəfindən aparılan uçotun',
       'istehlakçılar tərəfindən aparılan uçotun',
@@ -2117,10 +2114,10 @@ export const questions2 = [
   {
     number: 172,
     question:
-      'Maddi dəyərlərin zavoddaxili yerdəyişməsinin uçotu nəyin tərkib hissəsidir? istehlak amillərinin uçotunun',
+      'Maddi dəyərlərin zavoddaxili yerdəyişməsinin uçotu nəyin tərkib hissəsidir?',
     options: [
       'istehlakçılar tərəfindən aparılan uçotun',
-      '',
+      'istehlak amillərinin uçotunun',
       'istehsal amillərinin uçotunun',
       'maddi dəyərlilərin hərəkəti və ehtiyatların uçotunun',
       'yalnız vasitəçilər tərəfindən aparılan uçotun',
@@ -2130,10 +2127,10 @@ export const questions2 = [
   {
     number: 173,
     question:
-      'Maddi dəyərlərin hərəkəti və material ehtiyatlarının uçotu özündə nəyi əks etdirir? digər sənədlərin qəbul edilməsi qəbul olunmuş orderlərə möhürün vurulması',
+      'Maddi dəyərlərin hərəkəti və material ehtiyatlarının uçotu özündə nəyi əks etdirir?',
     options: [
-      '',
-      '',
+      'digər sənədlərin qəbul edilməsi',
+      'qəbul olunmuş orderlərə möhürün vurulması',
       'malgöndərənlərdən maddi dəyərlilərin qəbulunun uçotunu',
       'qəbul olunmuş malların avtomatik hesablanması',
       'qəbul olunmuş malların əllə hesablanması',
@@ -2254,24 +2251,22 @@ export const questions2 = [
   },
   {
     number: 183,
-    question:
-      'Material ehtiyatlarının saxlanması dəyəri nədən ibarətdir? məhsulun emalına əlavə xərclərdən',
+    question: 'Material ehtiyatlarının saxlanması dəyəri nədən ibarətdir?',
     options: [
       'əlavə anbarxərclərindən',
       'bütün anbar xərclərindən',
       'əlavə sığorta xərclərindən',
       'məhsul ehtiyatlarına investisiya qoyuluşundan',
-      '',
+      'məhsulun emalına əlavə xərclərdən',
     ],
     correctAnswer: 'məhsul ehtiyatlarına investisiya qoyuluşundan',
   },
   {
     number: 184,
-    question:
-      'Hansı sistemlər İstehsal daxili loqistik sistemlərdir ? sənaye rayonunun sərhədlərində olan sistemlər',
+    question: 'Hansı sistemlər İstehsal daxili loqistik sistemlərdir ?',
     options: [
       'istehsal rayonu ərazisində olan sistemlər',
-      '',
+      'sənaye rayonunun sərhədlərində olan sistemlər',
       'regiondan kənarda olan sistemlər',
       'istehsalın texnoloji tsikli daxilində olan sistemlər',
       'istehsalın texnoloji tsiklindən kənarda olan sistemlər',
@@ -2293,9 +2288,9 @@ export const questions2 = [
   {
     number: 186,
     question:
-      'Material ehtiyatlarının saxlanmasına sərf olunan xərclər nədən ibarətdir ? sifarişlərin yerinə yetirilməsindən',
+      'Material ehtiyatlarının saxlanmasına sərf olunan xərclər nədən ibarətdir ?',
     options: [
-      '',
+      'sifarişlərin yerinə yetirilməsindən',
       'avadanlığın və sifarişin yerinə yetirilməsindən',
       'material ehtiyatlarının saxlanması və sifarişlərin toplanmasından',
       'sifarişlərin yerinə yetirilməsi və material ehtiyatlarının saxlanması dəyərindən',
@@ -2378,9 +2373,9 @@ export const questions2 = [
   {
     number: 193,
     question:
-      'İstehsalın bir mərhələsindən digər mərhələsinə hərəkət edən material ehtiyatlarını bir müəssisə daxilində necə təsnifləşdirmək olar? rəqiblərin material ehtiyatlarına',
+      'İstehsalın bir mərhələsindən digər mərhələsinə hərəkət edən material ehtiyatlarını bir müəssisə daxilində necə təsnifləşdirmək olar?',
     options: [
-      '',
+      'rəqiblərin material ehtiyatlarına',
       'qeyri-tranzit material ehtiyyatlarına',
       'vasitəçilərin material ehtiyatlarına',
       'tranzit material ehtiyatlarına',
@@ -2441,11 +2436,10 @@ export const questions2 = [
   },
   {
     number: 198,
-    question:
-      'Hansı xərclər tədarük xərcləridir? təbii itkidən artıq olan xərclər',
+    question: 'Hansı xərclər tədarük xərcləridir?',
     options: [
       'alış üçün sərf olunan poçt-teleqraf və ezamiyyət xərcləri',
-      '',
+      'təbii itkidən artıq olan xərclər',
       'alıcıların seçilməsi',
       'alıcıların qiymətləndirilməsi',
       'anbarın taarifqiymətləri',
@@ -2455,13 +2449,13 @@ export const questions2 = [
   {
     number: 199,
     question:
-      'Hansı xərclər material ehtiyatlarının saxlanması və formalaşmasına çəkilən xərclərdir? dövriyyə vəsaitlərinin azaldılması ilə bağlı xərclər müəssisənin dövriyyə vəsaitlərinin azaldılması ilə bağlı xərclər',
+      'Hansı xərclər material ehtiyatlarının saxlanması və formalaşmasına çəkilən xərclərdir?',
     options: [
-      '',
+      'dövriyyə vəsaitlərinin azaldılması ilə bağlı xərclər',
       'dövriyyə vəsaitlərinin artırılması ilə bağlı xərclər',
       'fiziki şəxslərin dövriyyə vəsaitlərinə çəkdiyi xərclər',
       'müəssisənin material ehtiyatlarına sərf etdiyi dövriyyə vəsaitləri ilə bağlı xərclər',
-      '',
+      'müəssisənin dövriyyə vəsaitlərinin azaldılması ilə bağlı xərclər',
     ],
     correctAnswer:
       'müəssisənin material ehtiyatlarına sərf etdiyi dövriyyə vəsaitləri ilə bağlı xərclər',
