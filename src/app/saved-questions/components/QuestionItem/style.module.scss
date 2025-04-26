@@ -51,6 +51,7 @@
     }
 
     .default {
+      height: 73px;
       display: flex;
       justify-content: space-between;
       text-align: left;
@@ -68,7 +69,16 @@
 }
 
 .correct {
-  border-left:2px solid #3a705d !important;
-  //background-color: #e2f0eb;
+  background-color: #e2f0eb;
+}
+
+.openQuiz {
+  border-left: 2px solid #3a705d !important;
+  background-color: unset;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 

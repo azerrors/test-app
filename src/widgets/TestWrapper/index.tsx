@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import s from './style.module.scss';
 import clsx from 'clsx';
 import { useQuizStore } from '@/store/quizStore';
@@ -8,18 +8,15 @@ import { BookMarkEmptyIcon } from '@/assets/icons/BookMarkEmpty';
 import { QuestionProp } from '@/types/types';
 import { BookmarkIcon } from '@/assets/icons/BookmarkIcon';
 import { ProgressBar } from '@/components/ProgressBar';
+import { useSavedQuestions } from '@/hooks/useSavedQuestions';
+import { handleAddToSaved, handleDeleteFromSaved } from '@/helpers/handleSave';
 
 interface TestWrapperProp {
-  question: {
-    question: string;
-    options: string[];
-    correctAnswer: string;
-  };
+  question: QuestionProp;
 }
 
 export const TestWrapper = ({ question }: TestWrapperProp) => {
-  const [savedQuestions, setSavedQuestions] = useState<QuestionProp[]>();
-  const [isSaved, setIsSaved] = useState<boolean>(false);
+  const { savedQuestions, isSaved, setIsSaved } = useSavedQuestions(question);
 
   const showCorrectVariant = useQuizStore((store) => store.showCorrectVariant);
   const selectedAnswers = useQuizStore((store) => store.selectedAnswers);
@@ -29,55 +26,25 @@ export const TestWrapper = ({ question }: TestWrapperProp) => {
     (q) => q.question === question?.question
   )?.answer;
 
-  useEffect(() => {
-    const data = localStorage.getItem('saved');
-    const savedQuestions = data ? JSON.parse(data) : [];
-    setSavedQuestions(savedQuestions);
-    setIsSaved(
-      savedQuestions.some(
-        (q: QuestionProp) => q.question === question?.question
-      )
-    );
-  }, [question?.question]);
-
-  const handleAddToSaved = () => {
-    const data = localStorage.getItem('saved');
-    const savedQuestions = data ? JSON.parse(data) : [];
-
-    if (!isSaved) {
-      const updated = [...savedQuestions, question];
-      localStorage.setItem('saved', JSON.stringify(updated));
-      setIsSaved(true);
-    } else {
-      const updated = savedQuestions.filter(
-        (q: QuestionProp) => q.question !== question.question
-      );
-      localStorage.setItem('saved', JSON.stringify(updated));
-      setIsSaved(false);
-    }
-  };
-  const handleDeleteFromSaved = () => {
-    if (!savedQuestions) return;
-
-    const updatedData = savedQuestions.filter(
-      (saved) => saved.question !== question.question
-    );
-
-    localStorage.setItem('saved', JSON.stringify(updatedData));
-    setIsSaved(false);
-  };
-
   return (
     <div className={s.wrapper}>
       <div className={s.header}>
         <h2>{question?.question}</h2>
         <div className={s.savedIcons}>
           {isSaved ? (
-            <span onClick={handleDeleteFromSaved}>
+            <span
+              onClick={() =>
+                handleDeleteFromSaved(savedQuestions, question, setIsSaved)
+              }
+            >
               <BookmarkIcon color="#f1e50a" />
             </span>
           ) : (
-            <span onClick={handleAddToSaved}>
+            <span
+              onClick={() =>
+                handleAddToSaved(savedQuestions, isSaved, setIsSaved, question)
+              }
+            >
               <BookMarkEmptyIcon color="#f1e50a" />
             </span>
           )}

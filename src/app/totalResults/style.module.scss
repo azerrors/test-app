@@ -7,8 +7,14 @@
   font-weight: 500;
 
   @include isMobile() {
-    font-size: 20px ;
+    font-size: 20px;
   }
+}
+
+.haveResult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .totalResults {
@@ -16,9 +22,30 @@
   flex-wrap: wrap;
   gap: 30px;
 
-  @include isMobile(){
+  @include isMobile() {
     display: flex;
     justify-content: center;
 
   }
+
+  .wrapper {
+
+
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+
+      @include isMobile() {
+        padding-top: unset;
+      }
+    }
+
+    .notFoundText {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+
 }

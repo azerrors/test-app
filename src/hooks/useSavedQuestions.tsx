@@ -3,19 +3,22 @@
 import { useEffect, useState } from 'react';
 import { QuestionProp } from '@/types/types';
 
-export const useSavedQuestions = () => {
+export const useSavedQuestions = (questions?: QuestionProp) => {
   const [savedQuestions, setSavedQuestions] = useState<QuestionProp[]>([]);
+  const [isSaved, setIsSaved] = useState<boolean>(false);
 
   useEffect(() => {
     const data = localStorage.getItem('saved');
-    if (data) {
-      try {
-        setSavedQuestions(JSON.parse(data));
-      } catch (err) {
-        console.error('localStorage parse error:', err);
-      }
-    }
-  }, []);
+    if (!data) return;
 
-  return { savedQuestions };
+    try {
+      const parsed: QuestionProp[] = JSON.parse(data);
+      setSavedQuestions(parsed);
+      setIsSaved(parsed.some((q) => q.question === questions?.question));
+    } catch (err) {
+      console.error('localStorage parse error:', err);
+    }
+  }, [questions]);
+
+  return { savedQuestions, isSaved, setIsSaved };
 };

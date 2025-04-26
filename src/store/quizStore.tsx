@@ -10,6 +10,8 @@ interface QuizStore {
   setSelectedAnswer: (question: string, answer: string) => void;
   setShowCorrectVariant: (value: boolean) => void;
   setRandomQuestions: (questions: QuestionProp[]) => void;
+  openQuizModeInSaved: boolean;
+  setOpenQuizModeInSaved: () => void;
 }
 
 export const useQuizStore = create<QuizStore>((set) => ({
@@ -17,6 +19,11 @@ export const useQuizStore = create<QuizStore>((set) => ({
   showCorrectVariant: false,
   randomQuestions: [],
   selectedAnswers: [],
+  openQuizModeInSaved: false,
+
+  setOpenQuizModeInSaved: () => {
+    set((state) => ({ openQuizModeInSaved: !state.openQuizModeInSaved }));
+  },
 
   setSelectedAnswer: (question: string, answer: string) => {
     set((state) => {

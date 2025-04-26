@@ -8,6 +8,7 @@ import Link from 'next/link';
 import clsx from 'clsx';
 import { deleteAllItemsFromLocalStorage } from '@/helpers/deleteAllItemsFromLocalStorage';
 import { useRouter } from 'next/navigation';
+import { useQuizStore } from '@/store/quizStore';
 
 interface SavedQuestionsInfoProps {
   savedQuestions: QuestionProp[] | undefined;
@@ -17,6 +18,12 @@ export const SavedQuestionsInfo = ({
   savedQuestions,
 }: SavedQuestionsInfoProps) => {
   const router = useRouter();
+  const setOpenQuizModeInSaved = useQuizStore(
+    (state) => state.setOpenQuizModeInSaved
+  );
+  const openQuizModeInSaved = useQuizStore(
+    (state) => state.openQuizModeInSaved
+  );
 
   const handleClick = () => {
     router.replace('/');
@@ -36,6 +43,13 @@ export const SavedQuestionsInfo = ({
             Yaddaşını Yoxla
           </Link>
         </div>
+        <button
+          type="button"
+          className={s.btn2}
+          onClick={setOpenQuizModeInSaved}
+        >
+          {openQuizModeInSaved ? 'Sualları Təkrarla' : 'Sualları Təkrarlama'}
+        </button>
       </div>
 
       <div className={s.questionListWrapper}>

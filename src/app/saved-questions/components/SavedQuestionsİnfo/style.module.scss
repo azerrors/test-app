@@ -21,14 +21,14 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    min-height: 35vh;
+    min-height: 40vh;
     padding-top: 10px;
     width: 100%;
     border: 1px solid #eee;
     border-radius: 15px;
 
     @include isMobile() {
-      height: 20rem;
+      height: 25rem;
     }
 
     h3 {

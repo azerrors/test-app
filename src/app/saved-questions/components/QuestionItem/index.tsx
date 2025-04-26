@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { QuestionProp } from '@/types/types';
 import s from './style.module.scss';
 import { BookmarkIcon } from '@/assets/icons/BookmarkIcon';
 import { BookMarkEmptyIcon } from '@/assets/icons/BookMarkEmpty';
 import clsx from 'clsx';
 import { CheckMarkIcon } from '@/assets/icons/CheckMarkIcon';
+import { useQuizStore } from '@/store/quizStore';
+import { handleAddToSaved, handleDeleteFromSaved } from '@/helpers/handleSave';
+import { useSavedQuestions } from '@/hooks/useSavedQuestions';
 
 interface QuestionItemProp {
   questions: QuestionProp;
@@ -12,47 +15,11 @@ interface QuestionItemProp {
 }
 
 export const QuestionItem = ({ questions, number }: QuestionItemProp) => {
-  // const [showCorrectVariant, setShowCorrectVariant] = useState<boolean>(false);
-  const [isSaved, setIsSaved] = useState<boolean>(false);
-  const [savedQuestions, setSavedQuestions] = useState<QuestionProp[]>();
+  const { savedQuestions, isSaved, setIsSaved } = useSavedQuestions(questions);
 
-  useEffect(() => {
-    const data = localStorage.getItem('saved');
-    const savedQuestions = data ? JSON.parse(data) : [];
-    setSavedQuestions(savedQuestions);
-    setIsSaved(
-      savedQuestions.some(
-        (q: QuestionProp) => q.question === questions.question
-      )
-    );
-  }, [questions.question]);
-
-  const handleAddToSaved = () => {
-    const data = localStorage.getItem('saved');
-    const savedQuestions = data ? JSON.parse(data) : [];
-
-    if (!isSaved) {
-      const updated = [...savedQuestions, questions];
-      localStorage.setItem('saved', JSON.stringify(updated));
-      setIsSaved(true);
-    } else {
-      const updated = savedQuestions.filter(
-        (q: QuestionProp) => q.question !== questions.question
-      );
-      localStorage.setItem('saved', JSON.stringify(updated));
-      setIsSaved(false);
-    }
-  };
-  const handleDeleteFromSaved = () => {
-    if (!savedQuestions) return;
-
-    const updatedData = savedQuestions.filter(
-      (saved) => saved.question !== questions.question
-    );
-
-    localStorage.setItem('saved', JSON.stringify(updatedData));
-    setIsSaved(false);
-  };
+  const openQuizModeInSaved = useQuizStore(
+    (state) => state.openQuizModeInSaved
+  );
 
   return (
     <div className={s.wrapper} id={number.toString()}>
@@ -60,11 +27,19 @@ export const QuestionItem = ({ questions, number }: QuestionItemProp) => {
         <h2>{questions.question}</h2>
         <div className={s.savedIcons}>
           {isSaved ? (
-            <span onClick={handleDeleteFromSaved}>
+            <span
+              onClick={() =>
+                handleDeleteFromSaved(savedQuestions, questions, setIsSaved)
+              }
+            >
               <BookmarkIcon color="#f1e50a" />
             </span>
           ) : (
-            <span onClick={handleAddToSaved}>
+            <span
+              onClick={() =>
+                handleAddToSaved(savedQuestions, isSaved, setIsSaved, questions)
+              }
+            >
               <BookMarkEmptyIcon color="#f1e50a" />
             </span>
           )}
@@ -80,14 +55,15 @@ export const QuestionItem = ({ questions, number }: QuestionItemProp) => {
               key={answer}
               className={clsx(s.default, {
                 [s.correct]: isCorrect,
+                [s.openQuiz]: isCorrect && openQuizModeInSaved,
               })}
             >
               <button>{answer}</button>
-              {/*{isCorrect && isCorrect && (*/}
-              {/*  <span className={s.icon}>*/}
-              {/*    <CheckMarkIcon color="#2c8c72" />*/}
-              {/*  </span>*/}
-              {/*)}*/}
+              {isCorrect && !openQuizModeInSaved && (
+                <span className={s.icon}>
+                  <CheckMarkIcon color="#2c8c72" />
+                </span>
+              )}
             </div>
           );
         })}
