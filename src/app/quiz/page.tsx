@@ -1,12 +1,12 @@
+'use client';
+
 import React from 'react';
 import { Quiz } from '@/feature/Quiz';
+import { useSearchParams } from 'next/navigation';
 
-interface QuizPageProps {
-  searchParams: { [key: string]: string | undefined };
-}
+export default function QuizPage() {
+  const searchParams = useSearchParams();
+  const urlName = searchParams.get('q');
 
-export default function QuizPage({ searchParams }: QuizPageProps) {
-  const urlName = searchParams.q;
-
-  return <Quiz questionCategory={urlName} />;
+  return <Quiz questionCategory={urlName || ''} />;
 }
