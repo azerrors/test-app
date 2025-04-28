@@ -21,7 +21,10 @@ export const useModalStyle = (openModal?: boolean, onClose?: () => void) => {
 
     document.addEventListener('mousedown', handleClickOutside);
     document.addEventListener('keydown', handleEscapeKey);
-    document.body.style.overflow = 'hidden';
+
+    if (openModal) {
+      document.body.style.overflow = 'hidden';
+    }
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
