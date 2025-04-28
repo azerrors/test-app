@@ -7,7 +7,7 @@ import { useSearchParams } from 'next/navigation';
 export default function QuizPage() {
   const searchParams = useSearchParams();
   const urlName = searchParams.get('q');
-  console.log(a);
+  console.log(urlName);
 
   return <Quiz questionCategory={urlName || ''} />;
 }
