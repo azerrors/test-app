@@ -1,12 +1,12 @@
-'use client';
-
 import React, { Suspense } from 'react';
 import { Quiz } from '@/feature/Quiz';
-import { useSearchParams } from 'next/navigation';
 
-export default function QuizPage() {
-  const searchParams = useSearchParams();
-  const urlName = searchParams.get('q');
+interface QuizPageProps {
+  searchParams: { q: string };
+}
+
+export default async function QuizPage({ searchParams }: QuizPageProps) {
+  const urlName = searchParams.q;
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
