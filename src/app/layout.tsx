@@ -19,6 +19,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Online Test Et',
   description: 'Online Her Cur Test',
+  icons: {
+    icon: '/logo.ico',
+  },
 };
 
 export default function RootLayout({
