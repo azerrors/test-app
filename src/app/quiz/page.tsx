@@ -2,7 +2,8 @@ import React, { Suspense } from 'react';
 import { Quiz } from '@/feature/Quiz';
 
 interface QuizPageProps {
-  searchParams: { q: string } | Promise<{ q: string }>;
+  searchParams: Promise<{ q: string }>;
+  gi;
 }
 
 export default async function QuizPage({ searchParams }: QuizPageProps) {
