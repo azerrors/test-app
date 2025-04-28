@@ -4,26 +4,24 @@ import { Modal } from '@/widgets/Modal';
 import s from './style.module.scss';
 
 interface FinishQuizModalProps {
-  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
+  openModal: boolean;
   handleYesButton: () => void;
+  handleNoButton: () => void;
 }
 
 export const FinishQuizModal = ({
-  setOpenModal,
+  openModal,
   handleYesButton,
+  handleNoButton,
 }: FinishQuizModalProps) => {
-  const handleNoButtonClick = () => {
-    setOpenModal(false);
-  };
-
   return (
-    <Modal className={s.wrapper}>
-      <h1>Imtahani Bitirmek Isteyirsiz?</h1>
+    <Modal className={s.wrapper} openModal={openModal} onClose={handleNoButton}>
+      <h1>İmtahanı Bitirmək İstəyirsiz?</h1>
       <div className={s.buttonsWrapper}>
         <button type="button" className={s.yes} onClick={handleYesButton}>
           Bəli
         </button>
-        <button className={s.no} onClick={handleNoButtonClick}>
+        <button className={s.no} onClick={handleNoButton}>
           Xeyr
         </button>
       </div>

@@ -15,6 +15,7 @@ interface QuizProps {
 
 export const Quiz = ({ questionData, questionCategory }: QuizProps) => {
   const questionNumber = useQuizStore((store) => store.questionNumber);
+  const resetQuiz = useQuizStore((store) => store.resetQuiz);
   const randomQuestions = useQuizStore((store) => store.randomQuestions);
   const setRandomQuestions = useQuizStore((store) => store.setRandomQuestions);
 
@@ -27,6 +28,7 @@ export const Quiz = ({ questionData, questionCategory }: QuizProps) => {
   }
 
   useEffect(() => {
+    resetQuiz();
     if ((questionData && questionData.length > 0) || quiz.length > 0) {
       setRandomQuestions(getRandomQuestions(questionData || quiz, 50));
     }

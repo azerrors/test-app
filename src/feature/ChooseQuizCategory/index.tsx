@@ -1,24 +1,18 @@
 import React from 'react';
 import s from './style.module.scss';
+import Link from 'next/link';
 
-interface ChooseQuizCategoryProps {
-  setQuestionCategory: React.Dispatch<React.SetStateAction<string>>;
-}
-
-export const ChooseQuizCategory = ({
-  setQuestionCategory,
-}: ChooseQuizCategoryProps) => {
-  const chooseQuestion = (question: string) => {
-    setQuestionCategory(question);
-  };
+export const ChooseQuizCategory = () => {
   return (
     <div className={s.wrapper}>
       <h1>Uyğun Fənnə Aid İmtahanı Seç</h1>
       <div className={s.buttonWrapper}>
-        <button onClick={() => chooseQuestion('istehsal')}>
+        <Link href="/quiz?q=istehsal" className={s.link}>
           Istehsal Sistemleri
-        </button>
-        <button onClick={() => chooseQuestion('material')}>Material</button>
+        </Link>
+        <Link href="/quiz?q=material" className={s.link}>
+          Material
+        </Link>
       </div>
     </div>
   );
