@@ -11,7 +11,7 @@ export const ChooseQuizCategory = () => {
           Istehsal Sistemleri
         </Link>
         <Link href="/quiz?q=material" className={s.link}>
-          Material
+          Toxuculuq
         </Link>
       </div>
     </div>
