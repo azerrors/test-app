@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useMemo } from 'react';
 import s from './style.module.scss';
 import clsx from 'clsx';
 import { useQuizStore } from '@/store/quizStore';
@@ -25,6 +25,17 @@ export const TestWrapper = ({ question }: TestWrapperProp) => {
   const selectedAnswer = selectedAnswers.find(
     (q) => q.question === question?.question
   )?.answer;
+
+  const shuffleArray = (array: string[]) => {
+    return array
+      .map((value) => ({ value, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ value }) => value);
+  };
+  const shuffledOptions = useMemo(
+    () => shuffleArray(question.options),
+    [question]
+  );
 
   return (
     <div className={s.wrapper}>
@@ -53,9 +64,8 @@ export const TestWrapper = ({ question }: TestWrapperProp) => {
 
       <ProgressBar />
       <ul className={s.answers}>
-        {question?.options.map((answer) => {
-          const isCorrect =
-            answer === question.correctAnswer && question.options;
+        {shuffledOptions.map((answer: string) => {
+          const isCorrect = answer === question.correctAnswer;
           const isSelected = answer === selectedAnswer;
 
           return (
