@@ -1,4 +1,4 @@
-export const questions = [
+export const istehsal = [
   {
     'number': 1,
     'question': 'İstehsalın təşkili sisteminin formalaşdırılması zamanı istifadə olunan funksional yanaşmaların yarımsistemi deyildir:',

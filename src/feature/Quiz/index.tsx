@@ -4,9 +4,11 @@ import { MainWrapper } from '@/widgets/MainWrapper';
 import { QuizLayout } from '@/widgets/QuizLayout';
 import { useQuizStore } from '@/store/quizStore';
 import { getRandomQuestions } from '@/helpers/getRandomQuestions';
-import { questions } from '@/data/data';
+import { istehsal } from '@/data/data';
 import { QuestionProp } from '@/types/types';
-import { questions2 } from '@/data/data1';
+import { lif } from '@/data/data1';
+import { iqtisadi } from '@/data/data3';
+import { material } from '@/data/datat4';
 
 interface QuizProps {
   questionData?: QuestionProp[];
@@ -22,9 +24,13 @@ export const Quiz = ({ questionData, questionCategory }: QuizProps) => {
   let quiz: QuestionProp[] = [];
 
   if (questionCategory === 'istehsal') {
-    quiz = questions;
+    quiz = istehsal;
   } else if (questionCategory === 'material') {
-    quiz = questions2;
+    quiz = material;
+  } else if (questionCategory === 'iqtisadi') {
+    quiz = iqtisadi;
+  } else if (questionCategory === 'lif') {
+    quiz = lif;
   }
 
   useEffect(() => {

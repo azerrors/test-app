@@ -1,4 +1,4 @@
-export const questions2 = [
+export const lif = [
   {
     number: 1,
     question:

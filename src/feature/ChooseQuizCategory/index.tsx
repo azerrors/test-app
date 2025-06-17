@@ -11,7 +11,13 @@ export const ChooseQuizCategory = () => {
           Istehsal
         </Link>
         <Link href="/quiz?q=material" className={s.link}>
-          Lif
+          Material
+        </Link>
+        <Link href="/quiz?q=iqtisadi" className={s.link}>
+          Iqtisadi Ve Sosial
+        </Link>
+        <Link href="/quiz?q=lif" className={s.link}>
+          Lifler
         </Link>
       </div>
     </div>
