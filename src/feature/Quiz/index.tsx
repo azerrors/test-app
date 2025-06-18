@@ -7,7 +7,7 @@ import { getRandomQuestions } from '@/helpers/getRandomQuestions';
 import { istehsal } from '@/data/data';
 import { QuestionProp } from '@/types/types';
 import { lif } from '@/data/data1';
-import { iqtisadi } from '@/data/data3';
+import { islam } from '@/data/data3';
 import { material } from '@/data/datat4';
 
 interface QuizProps {
@@ -27,8 +27,8 @@ export const Quiz = ({ questionData, questionCategory }: QuizProps) => {
     quiz = istehsal;
   } else if (questionCategory === 'material') {
     quiz = material;
-  } else if (questionCategory === 'iqtisadi') {
-    quiz = iqtisadi;
+  } else if (questionCategory === 'islam') {
+    quiz = islam;
   } else if (questionCategory === 'lif') {
     quiz = lif;
   }

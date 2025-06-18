@@ -13,8 +13,8 @@ export const ChooseQuizCategory = () => {
         <Link href="/quiz?q=material" className={s.link}>
           Material
         </Link>
-        <Link href="/quiz?q=iqtisadi" className={s.link}>
-          Iqtisadi Ve Sosial
+        <Link href="/quiz?q=islam" className={s.link}>
+          Islam
         </Link>
         <Link href="/quiz?q=lif" className={s.link}>
           Lifler
