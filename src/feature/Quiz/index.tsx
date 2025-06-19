@@ -9,6 +9,7 @@ import { QuestionProp } from '@/types/types';
 import { lif } from '@/data/data1';
 import { islam } from '@/data/data3';
 import { material } from '@/data/datat4';
+import { emeliyyat } from '@/data/data5';
 
 interface QuizProps {
   questionData?: QuestionProp[];
@@ -23,6 +24,8 @@ export const Quiz = ({ questionData, questionCategory }: QuizProps) => {
 
   let quiz: QuestionProp[] = [];
 
+  console.log('asda');
+
   if (questionCategory === 'istehsal') {
     quiz = istehsal;
   } else if (questionCategory === 'material') {
@@ -31,6 +34,8 @@ export const Quiz = ({ questionData, questionCategory }: QuizProps) => {
     quiz = islam;
   } else if (questionCategory === 'lif') {
     quiz = lif;
+  } else if (questionCategory === 'emeliyyat') {
+    quiz = emeliyyat;
   }
 
   useEffect(() => {

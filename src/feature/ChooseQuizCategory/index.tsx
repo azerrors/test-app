@@ -19,6 +19,9 @@ export const ChooseQuizCategory = () => {
         <Link href="/quiz?q=lif" className={s.link}>
           Lifler
         </Link>
+        <Link href="/quiz?q=emeliyyat" className={s.link}>
+          Emeliyyat
+        </Link>
       </div>
     </div>
   );
