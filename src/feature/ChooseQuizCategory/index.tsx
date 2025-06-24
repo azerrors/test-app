@@ -10,18 +10,6 @@ export const ChooseQuizCategory = () => {
         <Link href="/quiz?q=istehsal" className={s.link}>
           Istehsal
         </Link>
-        <Link href="/quiz?q=material" className={s.link}>
-          Material
-        </Link>
-        <Link href="/quiz?q=islam" className={s.link}>
-          Islam
-        </Link>
-        <Link href="/quiz?q=lif" className={s.link}>
-          Lifler
-        </Link>
-        <Link href="/quiz?q=emeliyyat" className={s.link}>
-          Emeliyyat
-        </Link>
       </div>
     </div>
   );

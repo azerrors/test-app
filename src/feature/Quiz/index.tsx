@@ -6,10 +6,6 @@ import { useQuizStore } from '@/store/quizStore';
 import { getRandomQuestions } from '@/helpers/getRandomQuestions';
 import { istehsal } from '@/data/data';
 import { QuestionProp } from '@/types/types';
-import { lif } from '@/data/data1';
-import { islam } from '@/data/data3';
-import { material } from '@/data/datat4';
-import { emeliyyat } from '@/data/data5';
 
 interface QuizProps {
   questionData?: QuestionProp[];
@@ -28,14 +24,6 @@ export const Quiz = ({ questionData, questionCategory }: QuizProps) => {
 
   if (questionCategory === 'istehsal') {
     quiz = istehsal;
-  } else if (questionCategory === 'material') {
-    quiz = material;
-  } else if (questionCategory === 'islam') {
-    quiz = islam;
-  } else if (questionCategory === 'lif') {
-    quiz = lif;
-  } else if (questionCategory === 'emeliyyat') {
-    quiz = emeliyyat;
   }
 
   useEffect(() => {

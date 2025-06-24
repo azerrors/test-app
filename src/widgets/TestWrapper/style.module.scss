@@ -37,7 +37,7 @@
     color: #EEF7FF;
 
     @include isMobile() {
-      padding: 40px;
+      padding: 20px;
       font-size: 1.2rem;
     }
   }
@@ -53,7 +53,7 @@
 
 
     .default {
-      height: 73px;
+      min-height: 73px;
       display: flex;
       justify-content: space-between;
       text-align: left;
@@ -80,7 +80,7 @@
   border: 2px solid #7AB2B2 !important;
 }
 
-.icon{
+.icon {
   display: flex;
   justify-content: center;
   align-items: center;
