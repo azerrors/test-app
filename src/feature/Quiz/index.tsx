@@ -6,6 +6,7 @@ import { useQuizStore } from '@/store/quizStore';
 import { getRandomQuestions } from '@/helpers/getRandomQuestions';
 import { istehsal } from '@/data/data';
 import { QuestionProp } from '@/types/types';
+import { multi } from '@/data/data1';
 
 interface QuizProps {
   questionData?: QuestionProp[];
@@ -24,6 +25,8 @@ export const Quiz = ({ questionData, questionCategory }: QuizProps) => {
 
   if (questionCategory === 'istehsal') {
     quiz = istehsal;
+  } else if (questionCategory === 'multi') {
+    quiz = multi;
   }
 
   useEffect(() => {
